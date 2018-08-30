@@ -8,8 +8,8 @@
 file=$1
 read=$(basename $file | perl -ne 'm/_(R[12])_/;print "$1"')
 base=$(dirname $file)
-#samp=$(basename $base | sed 's/_IGO.*//')
-samp=$(basename $base)
+samp=$(basename $base | sed 's/_IGO.*//')
+#samp=$(basename $base)
 project=$(echo $file | perl -ne 'm|/(Project_.*?)/|;print $1')
 
 echo $file
