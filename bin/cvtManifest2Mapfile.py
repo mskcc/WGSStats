@@ -7,7 +7,7 @@ for line in fileinput.input():
     S=folder.split("/")
     out=["_1"]
     #out.append("s_"+S[-1].replace("Sample_","").replace("-","_"))
-    out.append(S[-1].replace("Sample_","")
+    out.append(S[-1].replace("Sample_",""))
     out.append(S[-3])
     out.append(folder)
     out.append(runType)
