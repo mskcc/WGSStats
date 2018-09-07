@@ -1,8 +1,6 @@
 #!/bin/bash
-#export MAPBIN=/home/socci/Code/Inventory/mkMapFiles/HiSeq
+export MAPBIN=$PWD
 SAMPLEDIRS=$1
-#cat $SAMPLEDIRS | xargs -n 1 $MAPBIN/isPEorSERun.sh >sampleManifest 
-#$MAPBIN/cvtManifest2Mapfile.py sampleManifest
-cat $SAMPLEDIRS | xargs -n 1 isPEorSERun.sh >sampleManifest 
-cvtManifest2Mapfile.py sampleManifest
+cat $SAMPLEDIRS | xargs -n 1 $MAPBIN/isPEorSERun.sh >sampleManifest 
+$MAPBIN/cvtManifest2Mapfile.py sampleManifest
 #rm sampleManifest
