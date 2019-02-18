@@ -1,6 +1,9 @@
 #!/bin/bash
 
-LSFBIN=/common/lsf/9.1/linux2.6-glibc2.3-x86_64/bin
+#NYX/JUNO
+LSFBIN=/common/lsf/10.1/linux3.10-glibc2.17-x86_64/bin
+#LUNA
+#LSFBIN=/common/lsf/9.1/linux2.6-glibc2.3-x86_64/bin
 
 JOBNAME=$1
 
